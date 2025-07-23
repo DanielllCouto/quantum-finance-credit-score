@@ -16,4 +16,4 @@ dvc-s3==3.2.0
 xgboost==3.0.0
 lightgbm==4.0.0
 catboost==1.2.8
-
+seaborn==0.12.2
