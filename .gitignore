@@ -1,8 +1,10 @@
 # Data
 /data/
+/models/
 
 # Mac OS-specific storage files
 .DS_Store
+
 
 # vim
 *.swp
@@ -185,3 +187,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 /data
+
+# CatBoost
+catboost_info/
+catboost_temp/
