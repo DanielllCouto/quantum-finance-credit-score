@@ -185,3 +185,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 /data
+
+# CatBoost artifacts (logs, snapshots, training outputs)
+catboost_info/
+catboost_temp/
