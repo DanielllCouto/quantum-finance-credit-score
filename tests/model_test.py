@@ -190,7 +190,7 @@ def test_golden_data(payload: dict, expected_label: int, case_name: str):
     Testa o modelo usando payloads fixos ("golden data") com resultados esperados.
 
     Verifica se a predição do modelo corresponde exatamente à classe esperada
-    para um "bom pagador" (2) e um "mau pagador" (0).
+    para um "Good" (2) e um "Poor" (0).
     """
     data_processed = prepare_data(payload)
     df_input = pd.DataFrame([data_processed], columns=COLUMNS)
