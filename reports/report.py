@@ -35,37 +35,36 @@ def format_metrics(metrics: dict):
 
 
 report = f"""
-## 📊 MLflow Report: `{model_name}`
+## 📊 Relatório MLflow: `{model_name}`
 
-### 🏁 Production Model (Last registered version)
-- **Run ID**: `{prod_version.run_id}`
-- **Model Version**: `{prod_version.version}`
+---
 
-#### 🔢 Metrics
+### 🏁 Modelo de Produção (Última versão registrada)
+- **ID da Execução**: `{prod_version.run_id}`
+- **Versão do Modelo**: `{prod_version.version}`
+
+#### 🔢 Métricas
 {format_metrics(prod_metrics)}
 
 ---
 
-### 🧪 Latest Experimental Run
-- **Run ID**: `{latest_exp_run_id}`
+### 🧪 Última Execução Experimental
+- **ID da Execução**: `{latest_exp_run_id}`
 
-#### 🔢 Metrics
+#### 🔢 Métricas
 {format_metrics(exp_metrics)}
 
 ---
 
-### 📈 Metric Comparison
+### 📈 Comparação das Métricas
 """
 
 for metric in prod_metrics:
     if metric in exp_metrics:
         delta = exp_metrics[metric] - prod_metrics[metric]
-        report += f"- `{metric}`: Experiment = {exp_metrics[metric]:.4f}, Production = {prod_metrics[metric]:.4f}, Δ = {delta:+.4f}\n"
+        report += f"- `{metric}`: Experimental = {exp_metrics[metric]:.4f}, Produção = {prod_metrics[metric]:.4f}, Δ = {delta:+.4f}\n"
 
-#with open("mlflow_report.md", "w") as f:
-#   f.write(report)
-# ... gerar a string 'report' antes
-out_path = r"C:\Users\User\Documents\portfolio\quantum-finance-credit-score\mlflow_report.md"
+out_path = "mlflow_report.md"
 with open(out_path, "w", encoding="utf-8", newline="") as f:
     f.write(report)
 
