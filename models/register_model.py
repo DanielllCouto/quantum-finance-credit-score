@@ -85,8 +85,8 @@ for metric in prod_metrics:
             f"Produção = {prod_metrics[metric]:.4f}, Δ = {delta:+.4f}"
         )
 
-report = "\n".join(report_lines) 
-print("Resumo de métricas pós-registro:\n" + report)
+report_lines = "\n".join(report_lines) 
+print("Resumo de métricas pós-registro:\n" + report_lines)
 
 # Escreve no summary do GitHub Actions
 summary_file = os.getenv("GITHUB_STEP_SUMMARY")
