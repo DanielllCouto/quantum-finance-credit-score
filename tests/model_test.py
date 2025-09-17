@@ -197,7 +197,7 @@ def test_golden_data(payload: dict, expected_label: int, case_name: str):
 
     # Convertendo tipos de dados para corresponder ao schema do modelo no MLflow.
     df_input = df_input.astype(COLUMN_DTYPES)
-
+    df_input = df_input.astype(np.float64)
     y_pred = model.predict(df_input)
     pred_label = int(y_pred[0])
 
@@ -228,7 +228,7 @@ def test_model_load_call():
 
     # Convertendo tipos de dados para corresponder ao schema do modelo no MLflow.
     df_input = df_input.astype(COLUMN_DTYPES)
-
+    df_input = df_input.astype(np.float64)
     y_pred = model.predict(df_input)
     pred = int(y_pred[0])
 
