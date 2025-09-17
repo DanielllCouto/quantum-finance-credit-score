@@ -76,12 +76,17 @@ summary = f"""
 ### 📈 Comparação das Métricas
 """
 
+report_lines = []
 for metric in prod_metrics:
     if metric in exp_metrics:
         delta = exp_metrics[metric] - prod_metrics[metric]
-        report += f"- `{metric}`: Experimental = {exp_metrics[metric]:.4f}, Produção = {prod_metrics[metric]:.4f}, Δ = {delta:+.4f}\n"
+        report_lines.append(
+            f"- `{metric}`: Experimental = {exp_metrics[metric]:.4f}, "
+            f"Produção = {prod_metrics[metric]:.4f}, Δ = {delta:+.4f}"
+        )
 
-summary += "\n---\n" + "\n".join(summary_lines)
+report = "\n".join(report_lines)  # <<< AGORA ‘report’ EXISTE
+print("Resumo de métricas pós-registro:\n" + report)
 
 # Escreve no summary do GitHub Actions
 summary_file = os.getenv("GITHUB_STEP_SUMMARY")
