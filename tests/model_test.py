@@ -149,7 +149,7 @@ def prepare_data(data: dict) -> list:
 @pytest.mark.parametrize(
     "payload, expected_label, case_name",
     [
-        # Caso 'bom pagador' -> esperado classe 2 (Good)
+        # Caso 'ok pagador' -> esperado classe 1 (Standard)
         (
             {
                 "idade": 40, "renda_anual": 95000.0, "salario_liquido_mensal": 6200.0,
@@ -163,8 +163,8 @@ def prepare_data(data: dict) -> list:
                 "comportamento_pagamento": "Low_spent_Small_value_payments",
                 "tipos_emprestimos": "Not Specified",
             },
-            2,
-            "good_case",
+            1,
+            "standard_case",
         ),
         # Caso 'mau pagador' -> esperado classe 0 (Poor)
         (
@@ -190,7 +190,7 @@ def test_golden_data(payload: dict, expected_label: int, case_name: str):
     Testa o modelo usando payloads fixos ("golden data") com resultados esperados.
 
     Verifica se a predição do modelo corresponde exatamente à classe esperada
-    para um "bom pagador" (2) e um "mau pagador" (0).
+    para um "normal pagador" (1) e um "mau pagador" (0).
     """
     data_processed = prepare_data(payload)
     df_input = pd.DataFrame([data_processed], columns=COLUMNS)
