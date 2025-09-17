@@ -85,7 +85,7 @@ for metric in prod_metrics:
             f"Produção = {prod_metrics[metric]:.4f}, Δ = {delta:+.4f}"
         )
 
-report = "\n".join(report_lines)  # <<< AGORA ‘report’ EXISTE
+report = "\n".join(report_lines) 
 print("Resumo de métricas pós-registro:\n" + report)
 
 # Escreve no summary do GitHub Actions
