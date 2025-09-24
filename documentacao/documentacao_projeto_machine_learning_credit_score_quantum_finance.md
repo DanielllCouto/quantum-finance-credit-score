@@ -157,7 +157,7 @@ O Dagshub também fornece um servidor MLflow totalmente integrado, que atua como
 
 Para uma análise detalhada das etapas de Análise Exploratória de Dados (AED) e pré-processamento, incluindo a limpeza, padronização, engenharia de features e transformação de variáveis categóricas, consulte a documentação externa:
 
-- **Documento:** [documentacao_tecnica_porocessamento_de_dados_credit_score_quantum_finance.md](documentacao_tecnica_porocessamento_de_dados_credit_score_quantum_finance.md)
+- **Documento:** [documentacao_tecnica_porocessamento_de_dados_credit_score_quantum_finance.md](https://github.com/DanielllCouto/quantum-finance-credit-score/blob/main/documentacao/documentacao_tecnica_processamento_de_dados_credit_score_quantum_finance.md)
 
 Este documento externo oferece uma explicação célula a célula do notebook `processamento-dados.ipynb`, detalhando cada decisão e transformação aplicada aos dados brutos para prepará-los para a modelagem.
 
@@ -165,7 +165,7 @@ Este documento externo oferece uma explicação célula a célula do notebook `p
 
 Para uma compreensão aprofundada do desenvolvimento, treinamento e experimentação dos modelos de Machine Learning, incluindo a seleção de algoritmos, a estratégia de ensemble (Stacking), o rastreamento de experimentos com MLflow e a evolução do modelo, consulte a documentação externa:
 
-- **Documento:** [documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md](documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md)
+- **Documento:** [documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md](https://github.com/DanielllCouto/quantum-finance-credit-score/blob/main/documentacao/documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md)
 
 Este documento externo fornece uma explicação célula a célula do notebook `desenvolvimento-modelo.ipynb`, cobrindo desde a importação de bibliotecas até a seleção e registro do modelo campeão, incluindo a consideração de múltiplos fluxos de teste e a evolução do modelo.
 
@@ -272,6 +272,6 @@ Este projeto demonstra uma implementação completa de um pipeline MLOps para um
 
 **Documentos Externos Anexos:**
 
-- [documentacao_tecnica_porocessamento_de_dados_credit_score_quantum_finance.md](documentacao_tecnica_porocessamento_de_dados_credit_score_quantum_finance.md)
+- [documentacao_tecnica_porocessamento_de_dados_credit_score_quantum_finance.md](https://github.com/DanielllCouto/quantum-finance-credit-score/blob/main/documentacao/documentacao_tecnica_processamento_de_dados_credit_score_quantum_finance.md)
 
-- [documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md](documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md)
+-  [documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md](https://github.com/DanielllCouto/quantum-finance-credit-score/blob/main/documentacao/documentacao_tecnica_experimentacao_e_desenvolvimento_de_modelo_credit_score_quantum_finance.md)
