@@ -8,6 +8,15 @@ Nosso objetivo primordial foi desenvolver uma solução de ML que não apenas en
 Para atingir esse objetivo, utilizamos um ecossistema integrado de ferramentas: **Dagshub, MLflow, DVC e GitHub**. ELas acompanham cada etapa do ciclo de vida do modelo, desde a limpeza e preparação dos dados até o registro e versionamento do modelo final. Essa integração garante **transparência, controle de versões e consistência entre ambientes**.
 
 ---
+## Contexto do Projeto
+
+Este repositório é parte de uma solução **end-to-end de Machine Learning** para previsão de score de crédito. Para uma visão completa da arquitetura, fluxo de CI/CD e integração entre os três componentes (modelagem, API e frontend), consulte o repositório central do projeto:
+
+👉 **[Quantum Finance – Credit Score Project](https://github.com/DanielllCouto/quantum-finance-credit-score-project )**
+
+Lá você encontrará a documentação geral, diagramas de arquitetura e uma visão holística de como este repositório se integra com a API de inferência e a aplicação Streamlit.
+
+---
 
 ## Arquitetura da Solução
 
